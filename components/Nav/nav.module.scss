@@ -1,0 +1,12 @@
+@use "styles/vars";
+
+.container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: vars.$nav-bar-height;
+  background-color: white;
+}

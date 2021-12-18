@@ -1,0 +1,60 @@
+@use "styles/vars";
+
+@font-face {
+    font-family: "Cabin";
+    src: url("/assets/Cabin-VariableFont_wdth,wght.ttf") format("truetype-variations");
+    font-weight: 400 700;
+    font-stretch: 75% 100%;
+    font-style: normal;
+}
+
+*:not(h1) {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+button,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: vars.$link-color;
+    
+    &:visited {
+        color: vars.$link-color;
+    }
+
+    &:hover {
+        color: vars.$link-color-hover;
+    }
+}
+
